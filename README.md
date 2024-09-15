@@ -21,20 +21,20 @@ create an environment using python 3.10 (or your preferred version):
 uv venv --python 3.10
 ```
 
-### 3. install dependencies
-
-install all the required dependencies from the `requirements.txt` file:
-
-```bash
-uv pip install -e .
-```
-
-### 4. activate the environment
+### 3. activate the environment
 
 activate the virtual environment:
 
 ```bash
 source .venv/bin/activate
+```
+
+### 4. install dependencies
+
+install all the required dependencies from the `requirements.txt` file:
+
+```bash
+uv pip install -e .
 ```
 
 ### 5. install pre-commits
