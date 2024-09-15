@@ -37,5 +37,11 @@ activate the virtual environment:
 source .venv/bin/activate
 ```
 
-### ready to code  
+### 5. install pre-commits
+
+```bash
+pre-commit install
+```
+
+## ready to code  
 you're now all set to start building your project.
