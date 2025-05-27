@@ -5,8 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "python_project"
 version = "0.0.1"
-dynamic = ["dependencies"]
 requires-python = ">=3.8"
+dependencies = [
+  "pre-commit",
+  "pytest",
+  "pytest-cov",
+]
 
 [tool.coverage]
 branch = true
@@ -48,6 +52,3 @@ no-lines-before = ["local-folder"]
 
 [tool.setuptools]
 packages = ["src"]
-
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
