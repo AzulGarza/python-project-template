@@ -12,7 +12,8 @@ repos:
       - id: mypy
         args: [--ignore-missing-imports, --check-untyped-defs]
         additional_dependencies: [types-PyYAML]
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+  - repo: https://github.com/pappasam/toml-sort
+    rev: v0.24.2
     hooks:
-      - id: requirements-txt-fixer
+      - id: toml-sort
+        args: ["--all", "--trailing-comma-inline-array"]
